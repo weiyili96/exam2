@@ -21,3 +21,7 @@ outreg2 using "/Users/weiyi/Desktop/BU/summer 2020/exam2/table/fish_table.doc", 
 
 ivregress 2sls lgq mon tues wed thurs (lgp = speed3)
 outreg2 using "/Users/weiyi/Desktop/BU/summer 2020/exam2/table/fish_table.doc", word append
+
+
+
+
