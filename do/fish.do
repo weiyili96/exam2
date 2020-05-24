@@ -13,11 +13,11 @@ gen lgq = log(quantity)
 
 gen lgp = log(price)
 
-regress lgq time lgp mon tues wed thurs
+regress lgq lgp mon tues wed thurs
 outreg2 using "/Users/weiyi/Desktop/BU/summer 2020/exam2/table/fish_table.doc", word append
 
-ivregress 2sls lgq time mon tues wed thurs (lgp = wave2)
+ivregress 2sls lgq mon tues wed thurs (lgp = wave2)
 outreg2 using "/Users/weiyi/Desktop/BU/summer 2020/exam2/table/fish_table.doc", word append
 
-ivregress 2sls lgq time mon tues wed thurs (lgp = speed3)
+ivregress 2sls lgq mon tues wed thurs (lgp = speed3)
 outreg2 using "/Users/weiyi/Desktop/BU/summer 2020/exam2/table/fish_table.doc", word append
